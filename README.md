@@ -1,6 +1,6 @@
 # Chat-App-Using-Firebase
 
-## Sử dụng Firebase Realtime Database.
-## Firebase Storage để store image
-## Firebase Cloud Message để gửi Notification khi có request add friend 
+## Using Firebase Realtime Database to store user's data.
+## Firebase Storage in order to store image
+## Firebase Cloud Message to send a Notification between 2 devices. 
 ## Firebase Authentication using email 

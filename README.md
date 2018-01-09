@@ -4,8 +4,5 @@
 ## Firebase Storage in order to store image
 ## Firebase Cloud Message to send a Notification between 2 devices. 
 ## Firebase Authentication using email 
-
-
-
-*Not map to MVP
-*Organize code is still messy
+### Not map to MVP
+### Organize code is still messy

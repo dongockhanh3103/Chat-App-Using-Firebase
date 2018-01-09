@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    tools:context="com.example.ngockhanh.chatapp.ChatActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <include
+        android:id="@+id/chat_appBar"
+        layout="@layout/app_bar_layout"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/chat_message_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+
+            android:id="@+id/chat_add_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.1"
+            android:background="@android:color/background_light"
+            android:src="@drawable/add" />
+
+        <EditText
+            android:id="@+id/chat_message_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@android:color/background_light"
+            android:gravity="center_vertical"
+            android:hint="@string/enter_message"
+            android:textSize="18sp" />
+
+        <ImageButton
+
+            android:id="@+id/chat_send_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.1"
+            android:background="@android:color/background_light"
+            android:src="@drawable/send" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_message_list"
+        android:layout_width="0dp"
+        android:layout_height="458dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_appBar"></android.support.v7.widget.RecyclerView>
+
+
+</android.support.constraint.ConstraintLayout>

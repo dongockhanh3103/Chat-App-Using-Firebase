@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.ngockhanh.chatapp.StartActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Welcome to ChatApp"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLogin"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignStart="@+id/btnLogin"
+        android:layout_marginBottom="91dp"
+        android:background="@android:color/background_light"
+        android:text="@string/need_a_new_account"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+
+        android:background="@color/colorAccent"
+        android:text="@string/already_have_account"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

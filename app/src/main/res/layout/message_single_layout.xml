@@ -3,16 +3,18 @@
     android:id="@+id/message_single_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="15dp">
+
+    android:layout_alignRight="@id/message_single_layout"
+    android:padding="10dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/message_profile_layout"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="36dp"
+        android:layout_height="40dp"
         android:src="@drawable/test" />
 
     <TextView
-        android:id="@+id/message_text_layout"
+        android:id="@+id/name_text_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -20,10 +22,44 @@
         android:layout_marginStart="17dp"
         android:layout_toEndOf="@+id/message_profile_layout"
         android:layout_toRightOf="@+id/message_profile_layout"
-        android:background="@drawable/message_text_background"
-        android:padding="15dp"
-        android:text="TextView"
-        android:textColor="#FFF"
-        android:textSize="14sp" />
+        android:text="Display Name"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/message_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_text_layout"
+        android:layout_alignStart="@+id/name_text_layout"
+        android:layout_below="@+id/name_text_layout"
+        android:text="Message text" />
+
+    <TextView
+
+        android:id="@+id/time_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name_text_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/name_text_layout"
+        android:layout_toRightOf="@+id/name_text_layout"
+        android:text="00.00" />
+
+    <ImageView
+
+        android:id="@+id/message_image_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/name_text_layout"
+        android:layout_alignStart="@+id/name_text_layout"
+        android:layout_below="@+id/name_text_layout"
+        android:scaleType="centerCrop"
+        android:src="@drawable/notification_icon"
+        android:visibility="invisible" />
 
 </RelativeLayout>
+

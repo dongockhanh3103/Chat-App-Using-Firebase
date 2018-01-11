@@ -6,14 +6,29 @@ package com.example.ngockhanh.chatapp;
 
 public class Messages {
     private String message;
-    private String seen;
-    private String time;
+    private Boolean seen;
+    private Long time;
     private String type;
-    public  Messages(String message,String seen,String time,String type){
+
+    public String getFrom() {
+        return from;
+    }
+
+    public void setFrom(String from) {
+        this.from = from;
+    }
+
+    private String from;
+
+    public  Messages(String message,Boolean seen,Long time,String type,String from){
         this.message=message;
         this.seen=seen;
         this.time=time;
         this.type=type;
+        this.from=from;
+
+    }
+    public Messages(){
 
     }
 
@@ -25,19 +40,19 @@ public class Messages {
         this.message = message;
     }
 
-    public String getSeen() {
+    public Boolean getSeen() {
         return seen;
     }
 
-    public void setSeen(String seen) {
+    public void setSeen(Boolean seen) {
         this.seen = seen;
     }
 
-    public String getTime() {
+    public Long getTime() {
         return time;
     }
 
-    public void setTime(String time) {
+    public void setTime(Long time) {
         this.time = time;
     }
 
